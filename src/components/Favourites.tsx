@@ -50,7 +50,7 @@ const Favourites: React.FunctionComponent<Props> = ({ favourites, onDeleteFavour
         {renderFavourites()}
       </div>
       <div className="row mt-4 ml-3" style={{ marginBottom: '20px' }}>
-        <Button id="delete-all" variant="outline-danger" onClick={handleShow} disabled={Object.keys(favourites).length === 0}>Delete all</Button>
+        {Object.keys(favourites).length > 0 && <Button id="delete-all" variant="outline-danger" onClick={handleShow} disabled={Object.keys(favourites).length === 0}>Delete all</Button>}
 
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>

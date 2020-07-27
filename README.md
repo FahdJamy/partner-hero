@@ -11,6 +11,9 @@
 - start the project `npm start`
 - access the project on `localhost:3000`
 
+#### App Online
+- the app is deployed on netlify [link](https://5f1ea632f9bb1b00075b4fe0--condescending-mccarthy-1843cd.netlify.app/)
+
 #### Technologies used.
 - React (React-Hooks).
 - Typescript.

@@ -85,6 +85,8 @@ const App = () => {
         nextImageHandler={nextImageHandler}
         previousImageHandler={previousImageHandler}
       />
+      <h5 className="text-center mt-4">Favourites</h5>
+      {Object.keys(favourites).length <= 0 && <div className="text-center"><span>You have not favourited any pictures yet.</span></div>}
       <div className="row">
         <Favourites
           favourites={favourites}
