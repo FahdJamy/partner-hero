@@ -18,5 +18,8 @@
 - React (React-Hooks).
 - Typescript.
 
+#### Things that need more work
+- Writing more tests.
+
 #### Author
 [Fahad Asiimwe](https://github.com/fahdjamy)
