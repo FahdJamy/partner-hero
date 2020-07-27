@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Favourites Component Should render Favourite component 1`] = `
+<div
+  className="mt-4"
+>
+  <div
+    className="card-group"
+  />
+  <div
+    className="row mt-4 ml-3"
+    style={
+      Object {
+        "marginBottom": "20px",
+      }
+    }
+  >
+    <button
+      className="btn btn-outline-danger"
+      disabled={true}
+      id="delete-all"
+      onClick={[Function]}
+      type="button"
+    >
+      Delete all
+    </button>
+  </div>
+</div>
+`;

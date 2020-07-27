@@ -14,7 +14,7 @@
     "@types/react-test-renderer": "^16.9.2",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
-    "jest": "^26.1.0",
+    "jest": "^24.9.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.13.1",
@@ -32,7 +32,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "homepage": "http://fahdjamy.github.io/partner-hero",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,6 +52,22 @@
   },
   "devDependencies": {
     "@types/jest": "^24.9.1",
-    "gh-pages": "^3.1.0"
+    "@types/redux-mock-store": "^1.0.2",
+    "gh-pages": "^3.1.0",
+    "redux-mock-store": "^1.5.4"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }

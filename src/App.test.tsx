@@ -1,9 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import configureStore from 'redux-mock-store';
+import {Provider} from "react-redux";
 import App from './App';
+const mockStore = configureStore();
+
+const store = mockStore({picture: {
+  picture: {}
+}})
+
 
 test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const { toJSON } = render(<Provider store={store}><App /></Provider>);
+  expect(toJSON).toMatchSnapshot()
+  
 });
