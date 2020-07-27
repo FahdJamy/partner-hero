@@ -5,6 +5,11 @@
 - One can delete favourited pictures of the day.
 
 #### To run the project locally
+- git clone the project `git clone https://github.com/FahdJamy/partner-hero.git`
+- install the dependencies `npm install`
+- add environment variable for the NASA api Key (REACT_APP_NASA_API_KEY).
+- start the project `npm start`
+- access the project on `localhost:3000`
 
 #### Technologies used.
 - React (React-Hooks).
